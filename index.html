@@ -1,20 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <title>Portfólio - Gui Mendez</title>
+  <meta charset="UTF-8">
+  <title>Gui Mendez | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <h1>Olá, eu sou o Gui 👋</h1>
-  <p>Analista de Dados | Python | Power BI | VBA</p>
 
+<header>
+  <h1>Gui Mendez</h1>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#skills">Skills</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <h2>Analista de Dados & Desenvolvedor</h2>
+  <p>Python • Power BI • VBA • SQL • Automação</p>
+  <button onclick="scrollToSection('projetos')">Ver Projetos</button>
+</section>
+
+<section id="sobre">
+  <h2>Sobre Mim</h2>
+  <p>
+    Sou estudante de Engenharia de Software focado em Dados, BI e Automação.
+    Experiência com Power BI, Python, Excel VBA e integrações corporativas.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">Python</div>
+    <div class="card">Power BI</div>
+    <div class="card">Excel VBA</div>
+    <div class="card">SQL</div>
+    <div class="card">Azure Data Lake</div>
+    <div class="card">JavaScript</div>
+  </div>
+</section>
+
+<section id="projetos">
   <h2>Projetos</h2>
-  <ul>
-    <li>BI de Vendas Power BI</li>
-    <li>Automação Excel VBA</li>
-    <li>Scripts Python</li>
-  </ul>
+  <div class="grid">
+    <div class="card">
+      <h3>BI de Vendas</h3>
+      <p>Dashboard Power BI com análise de volume, preço e mix.</p>
+    </div>
+    <div class="card">
+      <h3>Automação Excel</h3>
+      <p>Macros VBA para bridge financeira e relatórios.</p>
+    </div>
+    <div class="card">
+      <h3>Scripts Python</h3>
+      <p>Limpeza e transformação de dados com Pandas.</p>
+    </div>
+  </div>
+</section>
 
+<section id="contato">
   <h2>Contato</h2>
-  <p>LinkedIn: seu_link</p>
+  <p>Email: seuemail@email.com</p>
+  <p>LinkedIn: linkedin.com/in/seuusuario</p>
+  <button onclick="alert('Obrigado por visitar!')">Dizer Olá</button>
+</section>
+
+<footer>
+  <p>© 2026 Gui Mendez</p>
+</footer>
+
 </body>
 </html>
