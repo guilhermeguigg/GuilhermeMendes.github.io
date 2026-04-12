@@ -166,7 +166,7 @@
     <a href="#contact" class="btn-secondary">Falar Comigo</a>
   </div>
   <div class="hero-stats">
-    <div class="stat"><div class="stat-num">8°</div><div class="stat-label">Semestre</div></div>
+    <div class="stat"><div class="stat-num">✓</div><div class="stat-label">Exp. Real</div></div>
     <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Ferramentas BI</div></div>
     <div class="stat"><div class="stat-num">&#8734;</div><div class="stat-label">Curiosidade</div></div>
   </div>
@@ -178,10 +178,10 @@
     <div class="section-label">01 &mdash; Sobre Mim</div>
     <h2 class="section-title reveal">Quem sou eu</h2>
     <div class="about-grid">
-      <div class="about-text reveal">
-        <p>Estudante de <strong>Engenharia de Software</strong>, no 8&deg; semestre, apaixonado por transformar dados brutos em insights que impulsionam decis&otilde;es estrat&eacute;gicas.</p>
-        <p>Com experi&ecirc;ncia pr&aacute;tica em ambientes corporativos como <strong>Ingredion Brasil</strong>, atuo com o ciclo completo de dados: extra&ccedil;&atilde;o via <strong>SAP BW</strong>, modelagem e transforma&ccedil;&atilde;o com <strong>Power Query</strong>, e entrega de dashboards no <strong>Power BI</strong>.</p>
-        <p>Buscando minha primeira oportunidade como <strong>Analista de Dados J&uacute;nior</strong> em S&atilde;o Paulo, onde possa usar dados para contar hist&oacute;rias que realmente importam.</p>
+      <div class="about-text reveal" id="about-text">
+        <p id="about-p1"><strong>Analista de Dados</strong> com experi&ecirc;ncia pr&aacute;tica em ambientes corporativos, apaixonado por transformar dados brutos em insights que impulsionam decis&otilde;es estrat&eacute;gicas.</p>
+        <p id="about-p2">Atuei com o ciclo completo de dados na <strong>Ingredion Brasil</strong>: extra&ccedil;&atilde;o via <strong>SAP BW</strong>, modelagem e transforma&ccedil;&atilde;o com <strong>Power Query</strong>, e entrega de dashboards no <strong>Power BI</strong>. Valorizo o entendimento do neg&oacute;cio porque acredito que dados s&oacute; geram valor quando contam uma hist&oacute;ria que faz sentido pra quem decide.</p>
+        <p id="about-p3">Aberto a novas possibilidades em <strong>Data Analytics</strong> em S&atilde;o Paulo — se voc&ecirc; tem um desafio de dados, eu quero ouvir.</p>
       </div>
       <div class="terminal reveal">
         <div class="terminal-header">
@@ -233,7 +233,7 @@
       <div class="skill-card reveal">
         <div class="skill-card-icon">&#127891;</div>
         <div class="skill-card-title">Forma&ccedil;&atilde;o</div>
-        <div class="skill-tags"><span class="skill-tag">Eng. de Software</span><span class="skill-tag">8&deg; Semestre</span><span class="skill-tag">PL-300</span><span class="skill-tag">Data Analytics</span></div>
+        <div class="skill-tags"><span class="skill-tag">Eng. de Software</span><span class="skill-tag">PL-300</span><span class="skill-tag">Data Analytics</span></div>
       </div>
       <div class="skill-card reveal">
         <div class="skill-card-icon">&#127758;</div>
@@ -369,7 +369,7 @@ var langData = {
   heroTag: { pt: '// Analista de Dados', en: '// Data Analyst' },
   heroCta1: { pt: 'Ver Projetos', en: 'View Projects' },
   heroCta2: { pt: 'Falar Comigo', en: 'Get in Touch' },
-  heroStat1: { pt: 'Semestre', en: 'Semester' },
+  heroStat1: { pt: 'Exp. Real', en: 'Real Exp.' },
   heroStat2: { pt: 'Ferramentas BI', en: 'BI Tools' },
   heroStat3: { pt: 'Curiosidade', en: 'Curiosity' },
   sec1label: { pt: '01 \u2014 Sobre Mim', en: '01 \u2014 About Me' },
@@ -380,11 +380,10 @@ var langData = {
   sec3title: { pt: 'O que constru\u00ed', en: 'What I built' },
   sec4label: { pt: '04 \u2014 Contato', en: '04 \u2014 Contact' },
   sec4title: { pt: 'Vamos conversar', en: "Let's talk" },
-  contactp: { pt: 'Estou aberto a oportunidades de analista de dados j\u00fanior em S\u00e3o Paulo, al\u00e9m de colabora\u00e7\u00f5es e projetos de BI. Se voc\u00ea tem um desafio de dados, eu quero ouvir.', en: "I'm open to junior data analyst opportunities in S\u00e3o Paulo, as well as BI collaborations and projects. If you have a data challenge, I want to hear about it." },
-  formbtn: { pt: 'Enviar Mensagem', en: 'Send Message' },
-  formname: { pt: 'Nome', en: 'Name' },
-  formemail: { pt: 'Email', en: 'Email' },
-  formmsg: { pt: 'Mensagem', en: 'Message' }
+  contactp: { pt: 'Estou aberto a novas possibilidades em Data Analytics em S\u00e3o Paulo \u2014 se voc\u00ea tem um desafio de dados, eu quero ouvir.', en: "Open to new possibilities in Data Analytics in S\u00e3o Paulo \u2014 if you have a data challenge, I want to hear about it." },
+  aboutp1: { pt: '<strong>Analista de Dados</strong> com experi\u00eancia pr\u00e1tica em ambientes corporativos, apaixonado por transformar dados brutos em insights que impulsionam decis\u00f5es estrat\u00e9gicas.', en: '<strong>Data Analyst</strong> with hands-on experience in corporate environments, passionate about turning raw data into insights that drive strategic decisions.' },
+  aboutp2: { pt: 'Atuei com o ciclo completo de dados na <strong>Ingredion Brasil</strong>: extra\u00e7\u00e3o via <strong>SAP BW</strong>, modelagem e transforma\u00e7\u00e3o com <strong>Power Query</strong>, e entrega de dashboards no <strong>Power BI</strong>. Valorizo o entendimento do neg\u00f3cio porque acredito que dados s\u00f3 geram valor quando contam uma hist\u00f3ria que faz sentido pra quem decide.', en: 'I worked across the full data cycle at <strong>Ingredion Brasil</strong>: extraction via <strong>SAP BW</strong>, modeling and transformation with <strong>Power Query</strong>, and dashboard delivery in <strong>Power BI</strong>. I value business understanding because data only creates value when it tells a story that matters to decision-makers.' },
+  aboutp3: { pt: 'Aberto a novas possibilidades em <strong>Data Analytics</strong> em S\u00e3o Paulo \u2014 se voc\u00ea tem um desafio de dados, eu quero ouvir.', en: 'Open to new possibilities in <strong>Data Analytics</strong> in S\u00e3o Paulo \u2014 if you have a data challenge, I want to hear about it.' }
 };
 
 function setLang(l) {
@@ -408,10 +407,9 @@ function setLang(l) {
   document.querySelectorAll('.section-label')[3].textContent = langData.sec4label[l];
   document.querySelectorAll('.section-title')[3].textContent = langData.sec4title[l];
   document.querySelector('.contact-text p').textContent = langData.contactp[l];
-  document.querySelectorAll('.form-label')[0].textContent = langData.formname[l];
-  document.querySelectorAll('.form-label')[1].textContent = langData.formemail[l];
-  document.querySelectorAll('.form-label')[2].textContent = langData.formmsg[l];
-  document.getElementById('form-btn').textContent = langData.formbtn[l];
+  document.getElementById('about-p1').innerHTML = langData.aboutp1[l];
+  document.getElementById('about-p2').innerHTML = langData.aboutp2[l];
+  document.getElementById('about-p3').innerHTML = langData.aboutp3[l];
   phrases = l === 'pt'
     ? ['Power BI & DAX','SQL & Python','SAP BW Insights','Excel Avancado','Data Storytelling']
     : ['Power BI & DAX','SQL & Python','SAP BW Insights','Advanced Excel','Data Storytelling'];
