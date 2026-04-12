@@ -180,7 +180,7 @@
     <div class="about-grid">
       <div class="about-text reveal" id="about-text">
         <p id="about-p1"><strong>Analista de Dados</strong> com experi&ecirc;ncia pr&aacute;tica em ambientes corporativos, apaixonado por transformar dados brutos em insights que impulsionam decis&otilde;es estrat&eacute;gicas.</p>
-        <p id="about-p2">Atuei com o ciclo completo de dados na <strong>Ingredion Brasil</strong>: extra&ccedil;&atilde;o via <strong>SAP BW</strong>, modelagem e transforma&ccedil;&atilde;o com <strong>Power Query</strong>, e entrega de dashboards no <strong>Power BI</strong>. Valorizo o entendimento do neg&oacute;cio porque acredito que dados s&oacute; geram valor quando contam uma hist&oacute;ria que faz sentido pra quem decide.</p>
+        <p id="about-p2">Atuei com o ciclo completo de dados na <strong>Ingredion Brasil</strong>: extra&ccedil;&atilde;o via <strong>Azure Data Lake</strong>, modelagem e transforma&ccedil;&atilde;o com <strong>Power Query</strong>, e entrega de dashboards no <strong>Power BI</strong>. Valorizo o entendimento do neg&oacute;cio porque acredito que dados s&oacute; geram valor quando contam uma hist&oacute;ria que faz sentido pra quem decide.</p>
         <p id="about-p3">Aberto a novas possibilidades em <strong>Data Analytics</strong> em S&atilde;o Paulo — se voc&ecirc; tem um desafio de dados, eu quero ouvir.</p>
       </div>
       <div class="terminal reveal">
@@ -218,7 +218,7 @@
       <div class="skill-card reveal">
         <div class="skill-card-icon">&#128452;</div>
         <div class="skill-card-title">Dados &amp; ERP</div>
-        <div class="skill-tags"><span class="skill-tag">SAP BW</span><span class="skill-tag">SQL</span><span class="skill-tag">Excel Avan&ccedil;ado</span><span class="skill-tag">VBA</span></div>
+        <div class="skill-tags"><span class="skill-tag">Azure Data Lake</span><span class="skill-tag">SQL</span><span class="skill-tag">Excel Avan&ccedil;ado</span><span class="skill-tag">VBA</span></div>
       </div>
       <div class="skill-card reveal">
         <div class="skill-card-icon">&#9881;</div>
@@ -253,9 +253,9 @@
         <div>
           <div class="project-num">// 001 &mdash; DESTAQUE</div>
           <h3 class="project-title">Dashboard Financeiro LATAM</h3>
-          <p class="project-desc">Dashboard executivo em Power BI com seletor de vers&atilde;o (Actual vs LE Forecast), c&aacute;lculo de vari&acirc;ncia em DAX com SWITCH e DIVIDE/ALLSELECTED. Dados extra&iacute;dos do SAP BW, tratados via Power Query.</p>
+          <p class="project-desc">Dashboard executivo em Power BI com seletor de vers&atilde;o (Actual vs LE Forecast), c&aacute;lculo de vari&acirc;ncia em DAX com SWITCH e DIVIDE/ALLSELECTED. Dados extra&iacute;dos do Azure Data Lake, tratados via Power Query.</p>
           <div class="project-tags">
-            <span class="project-tag tag-bi">Power BI</span><span class="project-tag tag-sap">SAP BW</span><span class="project-tag tag-bi">DAX</span><span class="project-tag tag-excel">Power Query</span>
+            <span class="project-tag tag-bi">Power BI</span><span class="project-tag tag-sap">Azure Data Lake</span><span class="project-tag tag-bi">DAX</span><span class="project-tag tag-excel">Power Query</span>
           </div>
           <a href="https://github.com/guilhermeguigg" target="_blank" class="project-link">Ver no GitHub &rarr;</a>
         </div>
@@ -348,7 +348,7 @@ document.querySelectorAll('a, button, .project-card, .skill-card').forEach(funct
   el.addEventListener('mouseleave', function() { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(0,212,255,0.4)'; });
 });
 
-var phrases = ['Power BI & DAX','SQL & Python','SAP BW Insights','Excel Avancado','Data Storytelling'];
+var phrases = ['Power BI & DAX','SQL & Python','Azure Data Lake Insights','Excel Avancado','Data Storytelling'];
 var phraseIdx = 0, charIdx = 0, deleting = false;
 var typedEl = document.getElementById('typed');
 function type() {
@@ -382,7 +382,7 @@ var langData = {
   sec4title: { pt: 'Vamos conversar', en: "Let's talk" },
   contactp: { pt: 'Estou aberto a novas possibilidades em Data Analytics em S\u00e3o Paulo \u2014 se voc\u00ea tem um desafio de dados, eu quero ouvir.', en: "Open to new possibilities in Data Analytics in S\u00e3o Paulo \u2014 if you have a data challenge, I want to hear about it." },
   aboutp1: { pt: '<strong>Analista de Dados</strong> com experi\u00eancia pr\u00e1tica em ambientes corporativos, apaixonado por transformar dados brutos em insights que impulsionam decis\u00f5es estrat\u00e9gicas.', en: '<strong>Data Analyst</strong> with hands-on experience in corporate environments, passionate about turning raw data into insights that drive strategic decisions.' },
-  aboutp2: { pt: 'Atuei com o ciclo completo de dados na <strong>Ingredion Brasil</strong>: extra\u00e7\u00e3o via <strong>SAP BW</strong>, modelagem e transforma\u00e7\u00e3o com <strong>Power Query</strong>, e entrega de dashboards no <strong>Power BI</strong>. Valorizo o entendimento do neg\u00f3cio porque acredito que dados s\u00f3 geram valor quando contam uma hist\u00f3ria que faz sentido pra quem decide.', en: 'I worked across the full data cycle at <strong>Ingredion Brasil</strong>: extraction via <strong>SAP BW</strong>, modeling and transformation with <strong>Power Query</strong>, and dashboard delivery in <strong>Power BI</strong>. I value business understanding because data only creates value when it tells a story that matters to decision-makers.' },
+  aboutp2: { pt: 'Atuei com o ciclo completo de dados na <strong>Ingredion Brasil</strong>: extra\u00e7\u00e3o via <strong>Azure Data Lake</strong>, modelagem e transforma\u00e7\u00e3o com <strong>Power Query</strong>, e entrega de dashboards no <strong>Power BI</strong>. Valorizo o entendimento do neg\u00f3cio porque acredito que dados s\u00f3 geram valor quando contam uma hist\u00f3ria que faz sentido pra quem decide.', en: 'I worked across the full data cycle at <strong>Ingredion Brasil</strong>: extraction via <strong>Azure Data Lake</strong>, modeling and transformation with <strong>Power Query</strong>, and dashboard delivery in <strong>Power BI</strong>. I value business understanding because data only creates value when it tells a story that matters to decision-makers.' },
   aboutp3: { pt: 'Aberto a novas possibilidades em <strong>Data Analytics</strong> em S\u00e3o Paulo \u2014 se voc\u00ea tem um desafio de dados, eu quero ouvir.', en: 'Open to new possibilities in <strong>Data Analytics</strong> in S\u00e3o Paulo \u2014 if you have a data challenge, I want to hear about it.' }
 };
 
@@ -411,8 +411,8 @@ function setLang(l) {
   document.getElementById('about-p2').innerHTML = langData.aboutp2[l];
   document.getElementById('about-p3').innerHTML = langData.aboutp3[l];
   phrases = l === 'pt'
-    ? ['Power BI & DAX','SQL & Python','SAP BW Insights','Excel Avancado','Data Storytelling']
-    : ['Power BI & DAX','SQL & Python','SAP BW Insights','Advanced Excel','Data Storytelling'];
+    ? ['Power BI & DAX','SQL & Python','Azure Data Lake Insights','Excel Avancado','Data Storytelling']
+    : ['Power BI & DAX','SQL & Python','Azure Data Lake Insights','Advanced Excel','Data Storytelling'];
 }
 
 var reveals = document.querySelectorAll('.reveal');
