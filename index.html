@@ -425,11 +425,11 @@
               <div class="contact-link-val">+55 11 92579-4061</div>
             </div>
           </a>
-          <a href="mailto:guilherme.dataguimaraes@gmail.com" class="contact-link">
+          <a href="/cdn-cgi/l/email-protection#0562706c696d607768602b6164716462706c686477646076456268646c692b666a68" class="contact-link">
             <span class="contact-link-icon">✉️</span>
             <div>
               <div class="contact-link-label">Email</div>
-              <div class="contact-link-val">guilherme.dataguimaraes@gmail.com</div>
+              <div class="contact-link-val"><span class="__cf_email__" data-cfemail="2e495b4742464b5c434b004a4f5a4f495b47434f5c4f4b5d6e49434f4742004d4143">[email&#160;protected]</span></div>
             </div>
           </a>
         </div>
@@ -450,9 +450,7 @@
         </div>
         <div class="form-status" id="form-status"></div>
         <button class="btn-primary" id="form-btn" onclick="sendEmail()" style="width:100%;text-align:center;" data-pt="Enviar Mensagem" data-en="Send Message">Enviar Mensagem</button>
-        <p style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:8px;line-height:1.6;" data-pt="⚙️ Para ativar o envio de email, configure seu EmailJS com Service ID, Template ID e Public Key." data-en="⚙️ To enable email sending, configure your EmailJS with Service ID, Template ID and Public Key.">
-          ⚙️ Para ativar o envio de email, configure seu EmailJS com Service ID, Template ID e Public Key.
-        </p>
+
       </div>
     </div>
   </div>
@@ -464,11 +462,11 @@
   <div class="footer-copy" style="color:var(--accent);font-size:10px;letter-spacing:2px;">DATA ANALYTICS PORTFOLIO</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // EMAILJS CONFIG — substitua pelos seus valores em https://emailjs.com
-  const EMAILJS_SERVICE_ID  = 'SEU_SERVICE_ID';
-  const EMAILJS_TEMPLATE_ID = 'SEU_TEMPLATE_ID';
-  const EMAILJS_PUBLIC_KEY  = 'SUA_PUBLIC_KEY';
+  const EMAILJS_SERVICE_ID  = 'service_uijja3s';
+  const EMAILJS_TEMPLATE_ID = 'template_t0wiuuk';
+  const EMAILJS_PUBLIC_KEY  = 'lr12G3MJAex_Z8UrF';
 
   (function(){ emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY }); })();
 
@@ -562,12 +560,4 @@
 
   // SCROLL REVEAL
   const reveals = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); obs.unobserve(e.target); }
-    });
-  }, { threshold: 0.1 });
-  reveals.forEach(r => obs.observe(r));
-</script>
-</body>
-</html>
+  const obs = new IntersectionO
