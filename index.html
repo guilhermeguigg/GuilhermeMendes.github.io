@@ -114,15 +114,7 @@
   .contact-link-icon { font-size: 18px; }
   .contact-link-label { color: var(--muted); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
   .contact-link-val { color: var(--accent); font-size: 13px; margin-top: 2px; }
-  .contact-form { display: flex; flex-direction: column; gap: 16px; }
-  .form-group { display: flex; flex-direction: column; gap: 8px; }
-  .form-label { font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; }
-  .form-input, .form-textarea { background: var(--bg); border: 1px solid var(--border); color: var(--text); font-family: var(--mono); font-size: 13px; padding: 14px 16px; outline: none; transition: border-color 0.3s; resize: none; width: 100%; }
-  .form-input:focus, .form-textarea:focus { border-color: var(--accent); }
-  .form-textarea { height: 120px; }
-  .form-status { font-family: var(--mono); font-size: 12px; padding: 12px 16px; border-radius: 2px; display: none; }
-  .form-status.success { background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); color: var(--accent3); display: block; }
-  .form-status.error { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); color: #f87171; display: block; }
+  .contact-grid { grid-template-columns: 1fr !important; max-width: 600px; }
   footer { position: relative; z-index: 2; padding: 32px 60px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
   .footer-copy { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 1px; }
   .footer-copy span { color: var(--accent); }
@@ -328,22 +320,7 @@
           </a>
         </div>
       </div>
-      <div class="contact-form reveal">
-        <div class="form-group">
-          <label class="form-label">Nome</label>
-          <input class="form-input" id="form-name" type="text" placeholder="Seu nome">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Email</label>
-          <input class="form-input" id="form-email" type="email" placeholder="seu@email.com">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Mensagem</label>
-          <textarea class="form-textarea" id="form-message" placeholder="Ol&aacute; Guilherme..."></textarea>
-        </div>
-        <div class="form-status" id="form-status"></div>
-        <button class="btn-primary" id="form-btn" onclick="sendEmail()" style="width:100%;text-align:center;">Enviar Mensagem</button>
-      </div>
+
     </div>
   </div>
 </section>
@@ -354,58 +331,6 @@
 </footer>
 
 <script>
-(function() {
-  var s = document.createElement('script');
-  s.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
-  s.onload = function() {
-    emailjs.init({ publicKey: 'lr12G3MJAex_Z8UrF' });
-  };
-  document.head.appendChild(s);
-})();
-
-var EJS_SVC = 'service_uijja3s';
-var EJS_TPL = 'template_t0wiuuk';
-
-function sendEmail() {
-  var name    = document.getElementById('form-name').value.trim();
-  var email   = document.getElementById('form-email').value.trim();
-  var message = document.getElementById('form-message').value.trim();
-  var status  = document.getElementById('form-status');
-  var btn     = document.getElementById('form-btn');
-
-  status.className = 'form-status';
-  status.textContent = '';
-
-  if (!name || !email || !message) {
-    status.textContent = 'Preencha todos os campos.';
-    status.className = 'form-status error';
-    return;
-  }
-
-  btn.textContent = 'Enviando...';
-  btn.disabled = true;
-
-  emailjs.send(EJS_SVC, EJS_TPL, {
-    from_name:  name,
-    from_email: email,
-    message:    message,
-    reply_to:   email
-  }).then(function() {
-    status.textContent = 'Mensagem enviada! Retorno em breve.';
-    status.className = 'form-status success';
-    btn.textContent = 'Enviar Mensagem';
-    btn.disabled = false;
-    document.getElementById('form-name').value = '';
-    document.getElementById('form-email').value = '';
-    document.getElementById('form-message').value = '';
-  }, function(err) {
-    status.textContent = 'Erro ao enviar. Tente: guilherme.dataguimaraes@gmail.com';
-    status.className = 'form-status error';
-    btn.textContent = 'Enviar Mensagem';
-    btn.disabled = false;
-    console.error('EmailJS error:', err);
-  });
-}
 
 var cursor = document.getElementById('cursor');
 var ring   = document.getElementById('cursorRing');
